@@ -1,8 +1,8 @@
 let config = {
-  // Object with github's login as keys and slack's chat ID as values
-  // e.g.: {'meacuna': 'U123456'}
+  // Object with github's login as keys and slack's DM chat ID as value
+  // e.g.: {'meacuna': 'D123456'}
   users: {
-    'meacuna': 'U123456'
+    'meacuna': 'D123456'
   },
   // Slack's bot token
   slackBotToken: 'xoxb-my-slack-token'
