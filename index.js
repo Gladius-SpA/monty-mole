@@ -14,7 +14,7 @@ exports.handler = function(event, context, callback) {
 
     const body = JSON.parse(event.body);
     const review = body.review;
-    const numberOfChanges = Object.keys(body.changes).length;
+    const numberOfChanges = Object.keys(body.changes || {}).length;
     if (review.state == 'approved' || (body.action == 'edited' && numberOfChanges == 0)) {
         return callback(null, Object.assign(response, {'statusCode': 204}));
     }
