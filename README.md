@@ -1,4 +1,4 @@
-# github-pr-review-slack-notifier
+# Monty Mole
 Lambda function to notify via slack's bot DM that a PR has been reviewed
 
 
